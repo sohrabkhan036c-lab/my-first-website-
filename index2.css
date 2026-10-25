@@ -1,0 +1,56 @@
+
+/* box model ka mtlb k data,elements kese bhi website per box ki form me
+show huta he,yani elements ko hum specific boxes me show karte he
+different elements in differents box ,following properties styding*/
+div{
+    height: 200px;
+    width: 500px;
+    background-color: pink;
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: black; */
+        /* both are same declared by two ways also explained border left
+        right,top and buttm style*/
+
+    border: 5px solid black;
+    /* border-left-color: blue;
+    border-left-style: dashed; */
+    border-top: 5px dashed blue;
+    border-radius: 10px;
+    padding-top: 10px;
+    margin: 25px;
+}
+h1{
+    /* border-width: 2px;
+    border-style: dashed;
+    border-color: red; */
+    border: 2px dashed red;
+    /* also same method */
+}
+button{
+    border: 2px solid black;
+    border-radius: 10px;
+    /* padding-left: 25px;
+    padding-right: 25px; */
+    background-color: aqua;
+    padding: 0px 30px 0px 30px;
+    /* padding shortand
+    agr hum serf padding lek de eske bad 50 px value de tho padding 4 side per apply
+    huga,agr hum padding k bad tows valuse 10px and 20px two values de tho per padding ki pehli value top,buttom
+    per apply hugi awr dosree left and right
+    par apply huga,agr padding k bad three values de tho last one buttom pe apply hangi
+    and agr 4 values de tho top,right,buttom,and left per apply hugi yani clockwise */
+
+    /* margin used for the outside area of the box,border,it cover area between the boxes 
+    following is the shortend of margen 
+    if i enter 1 valve its for whole 4 sides equall,if iner 2 values its for top,buttom 
+    left and right,if enter 3 values its for top,left and right buttom 
+    if i enter 4 values will be appliy on top,right and and buttom left,its clockwise 
+    right side per margin zyada its becouse of block elelement here we work on div 
+    so div is block element its cover whole line 
+    
+    heading ko by default margin deya he tho hum esko remove kar sakte he ,margin ki value 
+    agr hum zero kare for heading tho remove ho jygi; */
+}
+
+    

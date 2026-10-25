@@ -1,0 +1,157 @@
+/* universal selecteruse for whole page */
+*{
+    font-family: 'Courier New';
+}
+/* element selecter use for same elements in page like all h3 hidings
+can take different element seperat by comma */
+
+h3{
+    color:red;
+}
+h1{
+    color:red;
+}
+/* id selecter its case sensitive mean words capital ho ya nomral per
+wahi sam lkni hugi,id use for specific element */
+#login {
+    background-color: white;
+
+}
+#signup{
+    background-color: red;
+    color: white;
+}
+/* class selecter agr hum chahe k multiple element ko same color
+de tho per hum use same class denge */
+.upvote{
+    background-color: green;
+    color: aliceblue;
+}
+
+/* its is declare by two methods for div last paragraph */
+
+ #Myid p{
+    color: red; 
+} 
+div [id=Myid] p{
+    color: red;
+}
+/*decendent selecter in this we just select anchor tags in paragrap of post
+agr class post remove kare just anchor tag le tho per sare page me jtne anchor
+tag he sub pe apply huga*/
+.post a{
+    color: purple;
+    background-color: yellow;
+}
+/*this is also a decendant selecter we take multiple things like nav,ul,li,anchar tagetc*/
+nav ul li a{
+    color: deeppink;
+}
+/*this is the last p anchor tag */
+p a {
+    color: purple;
+}
+
+/*this is adjacent sibling combination combination throug it we can apply
+property on files like after p on every h3 and button after upvote class properties
+applied sibbling mean on same level*/
+
+p+h3 {
+    text-decoration: underline;
+}
+/* yani upvot k bad jo button he usko color deya he .its on sam level 
+pehle hmare sat upvot button he tho uske sat neche answer button he*/
+.upvote+button{
+    background-color: cornflowerblue;
+    color: darkblue;
+}
+/*this is child combination its apply just on direct child like div is parrent and
+input is child applied property, its not applied on ul and li iside the div,*/
+
+div>input{
+    background-color: salmon;
+}
+/*this is attribute selecter also can apply properties through it
+we directly put values of attributes mean type,like password,and text.....*/
+
+input[type="text"]{
+    background-color: azure;
+    color: blue;
+}
+input[type="password"]{
+    background-color: azure;
+    color: blue;
+}
+
+/*this is same thing just mentioned type ,value jo b ho through type also can change
+like same elements colors changed div se leker type 1 hi chez ki colors different method pe 
+change keye*/
+input[type]{
+    background-color: burlywood;
+    color: red;
+}
+/*pseudo class 1 hover pseudo class yani ager hum chahe k p,text ,ya button
+per cursor le jaye eske sat use ka color ya bg color change hu jye tho es klye
+hover use huti he jseke button klye use ki he*/
+button:hover{
+    background-color: black;
+    color: white;
+}
+h3:hover{
+    text-decoration: none;
+}
+/*active psuedo class mean agr hum chahe k text,p,ya button etc per click
+kare use k sat uska color change hu tho us klye active class use huti he
+like used down for button and p names...*/
+button:active{
+    background-color: palevioletred;
+}
+p:active{
+    font-weight: bold;
+    color: green;
+}
+/*ye he checked class use for radio,checkbox,etc*/
+
+input[type="radio"]:checked + label{
+    color:red;
+    font-weight: bold;
+    
+
+}
+/*nth-of-type through it we can select multiple elements,single element and apply
+css property single mean div ki jga .post put kare tho css 1 element per
+apply huga number b ap de*/
+div:nth-of-type(1n){
+    background-color: blanchedalmond;
+}
+/* ye he psuedo selecter kese specific line,words etc ki color back ground
+color klye use huti he jesa k first hmare sat first-letter he to change first  letter
+of h1,first-line mean to chnage first line of p and selection mean if we select or
+double click the p then back ground color will according.....*/ 
+
+h1::first-letter{
+    color: black;
+}
+p::first-line{
+    color: purple;
+}
+
+p::selection{
+    background-color: rgb(182, 205, 50);
+}
+/* ye cascading property he ,decleration me jo property bad me ayegi wahi 
+apply hugi ,neche property me blue color ki propert apply hugi,ab agr me index.css2
+folder bnaw usko link karo index1.html k sat ,esme h3 me green color declare karo
+tho per h3 ka color green huga q k index2.css index1,css k bad ati he .ess klye selecter
+same ho yani yaha selecter h3 he .agr selecter different ate he tho per specifity 
+dekte he yani #id,.class and element ki ratio dekte he #id>.class>element
+agr specifity b same ati he tho per cascading dekte he*/
+
+h3{
+    background-color: yellow;
+}
+h3{
+    background-color: blue;
+}
+
+

@@ -1,0 +1,56 @@
+/*ye inheritance he div se sare element color ko inherat karega*/
+ /* div{
+    background-color: yellow;
+} */
+/*ye special serf forms ko color deya he ye red huga*/
+/* form{
+    background-color: red;
+} */
+
+/* ye placeholder awr button ne color inherate nhi keya tha tho ess lye alg css code type keya */
+ /* input{
+    background-color: inherit;
+ }
+ button{
+    background-color: inherit;
+ }
+ button:hover{
+    background-color: red;
+ }  */
+
+ /* main heading color and backgroung color channged in inspect it mean that we ccan change also colors
+ and styles in inspect */
+ #maintopic{
+   color: blue; 
+
+ }
+ *{
+   text-align: center;
+ }
+ h1,h2,h3{
+   font-family: georgia;
+ } 
+ .best{
+  color: white;
+  background-color:cornflowerblue ;
+ }
+ 
+ div button{
+  background-color: purple;
+  color: azure;
+ }
+ button:hover{
+  background-color: yellow;
+  color:blue ;
+ }
+
+ p:nth-of-type(2n){
+  color: yellow;
+ }
+
+ h1::first-letter{
+  color: red;
+ }
+ #yes:checked+label{
+  color: darkgreen;
+ }

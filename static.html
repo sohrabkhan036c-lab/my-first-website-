@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    div{
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        border: 3px solid black;
+        text-align: center;
+        margin: 20px;
+        display: inline-block;
+
+    }
+    #static{
+        background-color: yellow;
+        position: static;
+        top: 100px;
+        left: 100px;
+    }
+      /* relative esme box top se 100 awr left se b 100px move huga 
+      will be available remaining space ,mtlb yani k humne second div
+      move keya per uska origenal space khali he thesra uska bad aya */
+    #relative{
+        background-color: yellow;
+        position: relative;
+        top: 100px;
+        left: 100px;
+    }
+     /*  absolute me jo box move huga tho wo pure page k mutbk move huga
+     q k page uska parrent huga uper static k beach me show huga awer neche absolute me 
+     jga bbhi remain nhi huga,yani k 2nd box move keya tho uske origenal place 3rd one ne lya */
+
+    #absolute{
+        background-color: yellow;
+        position: absolute;
+        top: 100px;
+        left: 100px;
+    }
+      /* fixed ka jo box move huga tho blkul relative ki tara parrent k mutbk move 
+      huga awr uske oper ayega exactly,jub hum neche scrole karenge tho different find
+      skte he,agr hum sub se neche kaffi paragraph add kare awr neche scrole kare
+      tho sare box ghyeb hunge but fixed will be on screen.also used sticky
+      position it mean jun hum scrole karenge tho ekk jga per box stick huga
+      awr fixed stick nhi huta*/
+        #fixed{
+        background-color: yellow;
+        position: fixed;
+        top: 100px;
+        left: 100px;
+    }
+
+</style>
+
+<body>
+       <!-- static -->
+    <section>
+        <h2>static demo</h2>
+        <div></div>
+        <div id="static"></div>
+
+    </section>
+       <!-- relative -->
+     <section>
+        <h2>relative demo</h2>
+        <div></div>
+        <div id="relative"></div>
+        <div></div>
+
+    </section>
+    <!-- absolute -->
+     <section>   
+        <h2>absolute demo</h2>
+        <div></div>
+        <div id="absolute"></div>
+        <div></div>
+
+    </section>
+
+        <!-- fixed-->
+     <section>   
+        <h2>fixed demo</h2>
+        <div></div>
+        <div id="fixed">fixed</div>
+        <div></div>
+
+    </section>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex debitis vero, fugiat laboriosam dolores eveniet esse optio assumenda eos? Saepe illum quasi consectetur quis eum ab, harum laborum beatae.
+
+    </p> 
+
+    
+    
+</body>
+</html>

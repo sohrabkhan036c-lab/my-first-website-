@@ -1,0 +1,226 @@
+ /* #info{
+    text-align: center; 
+      
+}
+#pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; */
+}
+
+/* 1. Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* 2. Whole Website */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #071323;
+    color: #f1f5f9;
+    line-height: 1.6;
+}
+
+/* 3. Navigation Bar */
+header {
+    background-color: #091526;
+    border-bottom: 1px solid #243449;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+nav h2 {
+    color: #168bff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #168bff;
+}
+
+/
+/* 4. All Sections */
+ section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 55px 20px;
+    border-bottom: 1px solid #243449;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    border-left: 4px solid #168bff;
+    padding-left: 12px;
+}
+
+/* 5. Home Section */
+#home {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(
+        120deg,
+        #071323,
+        #0b2445
+    );
+}
+
+#home h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 10px;
+}
+
+#home h1 span {
+    color: #168bff;
+}
+
+#home p {
+    margin-bottom: 20px;
+    max-width: 550px;
+}
+
+/* 6. Buttons and Links */
+#home a,
+button {
+    display: inline-block;
+    background-color: #168bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#home a:hover,
+button:hover {
+    background-color: #0068cc;
+    transform: translateY(-3px);
+}
+
+/* 7. About Section */
+#about p {
+    max-width: 750px;
+    margin-bottom: 15px;
+}
+
+/* 8. Skills Section */
+#skills p {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#skills {
+    background-color: #091526;
+}
+
+/* 9. Projects Section */
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#projects h2 {
+    width: 100%;
+}
+
+.project-card {
+    flex: 1 1 250px;
+    padding: 20px;
+    background-color: #0d1d31;
+    border: 1px solid #243449;
+    border-radius: 12px;
+    transition: transform 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: #168bff;
+}
+
+.project-card h3 {
+    color: #168bff;
+    margin-bottom: 10px;
+}
+
+/* 10. Education Section */
+#education {
+    background-color: #091526;
+}
+
+#education p {
+    margin-top: 10px;
+}
+
+/* 11. Contact Section */
+#contact a {
+    color: #168bff;
+}
+
+#contact p {
+    margin-bottom: 10px;
+}
+
+/* 12. Footer */
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    background-color: #050d18;
+    color: #94a3b8;
+}
+
+/* 13. Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    section {
+        padding: 35px 18px;
+    }
+
+    #projects {
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 100%;
+    }  
+} 

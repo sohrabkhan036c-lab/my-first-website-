@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+</head>
+<style>
+    input[type="radio"]:checked+label{
+        color: red;
+        font-weight: bold;
+    }
+    input:hover{
+        background-color: black;
+        color: white;
+        
+    }
+    input:active{
+        background-color: blue;
+        color: red;
+    }
+    /* applied down bg and c onwhole option in select */
+    select:nth-of-type(2){
+        background-color: wheat;
+        color: red;
+    }
+    /*its on select 1*/
+    select:nth-of-type(1){
+        background-color: bisque;
+        color: darkmagenta;
+    }
+    /*this color proper applied on the first option of select 2.this is pseudo class*/
+    select option:first-child{
+        background-color: yellow;
+    }
+
+</style>
+
+<body>
+    <form action="/action">
+      <lable>name</lable>
+      <input type="text" id="name" placeholder="enter your name">
+      <br>
+      <lable>email</lable>
+      <input type="email" id="email" placeholder="enter your emai">
+      <br>
+      <input type="date">
+      <br>
+      <input type="file">
+      <br>
+      select gender
+      <br>
+
+      
+      <input  type="radio" name="gender" id="male" value="male">
+      <label for="male">male</label>
+
+      <input type="radio" name="gender" id="female" value="female">
+      <label for="female">female</label>
+
+      <br>
+      <select name="gender" id="gender">
+            <option value="male">male</option>
+        <option value="female">female</option>
+        </select>
+
+        <br>
+        <select name="department" id="department">
+            <option value="cs">computer science</option>
+            <option value="phar">pharmacy</option>
+            <option value="eng">english</option>
+            <option value="math">maths</option>
+            <option value="isl">islamiat</option>
+            <option value="cyc">cychology</option>
+            <option value="phy">physics</option>
+            <option value="scie">sciences</option>
+            <option value="nurs">nursing</option>
+        </select>
+    
+      
+      
+
+
+
+    </form>
+    
+</body>
+</html>
